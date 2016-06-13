@@ -7,3 +7,5 @@
 <p>By {{model.author}} on {{model.date}}</p>
 
 {{update-listing listing=model update="update"}}
+
+<button {{action 'destroyListing' model}}>Delete</button>
