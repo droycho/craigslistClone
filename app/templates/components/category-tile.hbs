@@ -1,1 +1,5 @@
-<li>{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</li>
+<ul>
+  {{#each category.listings as |listing|}}
+    <li>{{#link-to 'listing' listing.id}}{{listing.date}}, {{listing.title}}, ${{listing.price}}{{/link-to}}</li>
+  {{/each}}
+</ul>

@@ -1,9 +1,34 @@
-{ "categories": [{
+{
+  "categories": [{
     "name": "Housing"
   }, {
     "name": "For Sale"
-    }, {
-      "name": "Services"
-      }]
-  
+  }, {
+    "name": "Services"
+  }],
+  "listings": [{
+    "title": "Two bedroom apartment downtown",
+    "author": "Paul Revere",
+    "price": "$600",
+    "image": "https://www.deanshomer.com/img/apartments.jpg",
+    "description": "Nice little apartment. This is just a test.",
+    "date": "6-11-2016",
+    "category": "Housing"
+  }, {
+    "title": "Fixed-gear bike for sale",
+    "author": "Bill Murray",
+    "price": "$150",
+    "image": "http://cdn.shopify.com/s/files/1/0232/3305/products/State_Bicycle_Co_Fixie_Bike_Rutherford_1_large.jpg?v=1439665712",
+    "description": "Bike works well. gets from point A to point B.",
+    "date": "3-25-2016",
+    "category": "For Sale"
+  }, {
+    "title": "Lawn care service",
+    "author": "Edward Scissorhands",
+    "price": "$25",
+    "image": "http://www.better-lawn-care.com/images/Spring_lawn_care_tools.jpg",
+    "description": "Fast, cheap, and reliable lawn care service.",
+    "date": "10-15-2015",
+    "category": "Services"
+  }]
 }
