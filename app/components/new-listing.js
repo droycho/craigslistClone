@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         price: parseInt(this.get('price')),
         image: this.get('image'),
         description: this.get('description'),
-        date: this.get('date'),
+        date: moment().format(),
         category: this.get('category')
       };
       this.set('addNewListing', false);

@@ -1,5 +1,5 @@
 <ul>
-  {{#each category.listings as |listing|}}
+  {{#each sortedListings as |listing|}}
     <li><img src={{listing.image}}>{{#link-to 'listing' listing.id}}{{listing.date}}, {{listing.title}}, ${{listing.price}}{{/link-to}}</li>
   {{/each}}
 </ul>

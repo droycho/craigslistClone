@@ -1,0 +1,36 @@
+{{#if updateListingForm}}
+  <h4>Update {{listing.title}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title" placeholder=listing.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" placeholder=listing.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price/cost</label>
+        {{input value=price id="price" placeholder=listing.price}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image" placeholder=listing.image}}
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        {{input value=description id="description" placeholder=listing.description}}
+      </div>
+
+      <button {{action 'update' listing}}>Save</button>
+
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateListingForm'}}>Update</button>
+{{/if}}
